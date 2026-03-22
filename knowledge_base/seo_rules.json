@@ -1,0 +1,54 @@
+{
+  "domain": "SEO",
+  "description": "Search Engine Optimization best practices for web pages",
+  "rules": [
+    {
+      "id": "seo_001",
+      "property": "h1_count",
+      "rule": "Every page must have exactly one H1 tag",
+      "severity": "CRITICAL",
+      "good_range": [1, 1],
+      "reasoning": "H1 is the primary signal to search engines about page topic. Multiple H1s confuse crawlers; zero H1s miss a critical ranking opportunity."
+    },
+    {
+      "id": "seo_002",
+      "property": "meta_title",
+      "rule": "Meta title should be between 50 and 60 characters",
+      "severity": "HIGH",
+      "good_range": [50, 60],
+      "reasoning": "Titles under 50 chars miss keyword opportunities. Titles over 60 chars get truncated in Google SERPs, hurting click-through rates."
+    },
+    {
+      "id": "seo_003",
+      "property": "meta_description",
+      "rule": "Meta description should be between 150 and 160 characters",
+      "severity": "HIGH",
+      "good_range": [150, 160],
+      "reasoning": "Meta descriptions are the preview snippet in Google. Too short wastes the opportunity; too long gets cut off."
+    },
+    {
+      "id": "seo_004",
+      "property": "word_count",
+      "rule": "Pages should have a minimum of 300 words for SEO value",
+      "severity": "MEDIUM",
+      "good_range": [300, 99999],
+      "reasoning": "Search engines consider thin content (under 300 words) low-value. Competitive pages typically have 800-1500 words."
+    },
+    {
+      "id": "seo_005",
+      "property": "h2_count",
+      "rule": "Pages should have at least 2 H2 tags to structure content",
+      "severity": "MEDIUM",
+      "good_range": [2, 99],
+      "reasoning": "H2s help search engines understand content hierarchy and improve crawlability of long-form content."
+    },
+    {
+      "id": "seo_006",
+      "property": "missing_alt_pct",
+      "rule": "Less than 10% of images should be missing alt text",
+      "severity": "HIGH",
+      "good_range": [0, 10],
+      "reasoning": "Alt text is an SEO signal for image search. Missing alt text also violates WCAG accessibility standards."
+    }
+  ]
+}

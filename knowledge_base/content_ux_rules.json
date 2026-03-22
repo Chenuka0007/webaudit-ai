@@ -1,0 +1,46 @@
+{
+  "domain": "Content & UX",
+  "description": "Content quality and user experience best practices",
+  "rules": [
+    {
+      "id": "content_001",
+      "property": "word_count",
+      "rule": "Blog posts and landing pages perform best at 800-1500 words",
+      "severity": "MEDIUM",
+      "good_range": [800, 1500],
+      "reasoning": "HubSpot research shows 800-1500 word pages generate the most organic traffic and backlinks for marketing sites."
+    },
+    {
+      "id": "content_002",
+      "property": "h3_count",
+      "rule": "Use H3 tags to break up long sections under H2s",
+      "severity": "LOW",
+      "good_range": [1, 99],
+      "reasoning": "H3 subheadings improve scanability. 79% of users scan rather than read web content (Nielsen Norman Group)."
+    },
+    {
+      "id": "ux_001",
+      "property": "external_links",
+      "rule": "External links should open in new tabs and be used sparingly",
+      "severity": "LOW",
+      "good_range": [0, 10],
+      "reasoning": "Excessive external links leak PageRank and pull users away from your site before converting."
+    },
+    {
+      "id": "ux_002",
+      "property": "internal_links",
+      "rule": "Pages should have at least 2-3 internal links to support site architecture",
+      "severity": "MEDIUM",
+      "good_range": [2, 99],
+      "reasoning": "Internal linking distributes PageRank across your site and helps users discover related content."
+    },
+    {
+      "id": "ux_003",
+      "property": "image_count",
+      "rule": "Marketing pages should include at least 1-2 images to break up text",
+      "severity": "LOW",
+      "good_range": [1, 99],
+      "reasoning": "Visual content increases time-on-page by 94% on average (Skyword research). Pure text pages have higher bounce rates."
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "timestamp": "2026-03-22T22:33:25.333579",
+  "url": "https://kdu.ac.lk/",
+  "rag_retrieved_rules_count": 14,
+  "rag_violated_rules_count": 7,
+  "pass1": {
+    "system_prompt": "You are a senior web marketing analyst at a digital agency specializing in SEO, conversion rate optimization (CRO), and content strategy.\n\nYour role is to analyze webpage audit data and provide specific, actionable insights.\n\nSTRICT RULES \u2014 follow these without exception:\n1. ONLY reference data provided in the METRICS and KNOWLEDGE BASE sections\n2. Never invent statistics, scores, or data points not provided to you\n3. Every insight must cite a specific metric value (e.g., \"With only 1 CTA for 1,243 words...\")\n4. Never give generic advice \u2014 be specific to this exact page's numbers\n5. If a metric was not measured, say \"not measured\" \u2014 do not assume\n6. Return ONLY valid JSON \u2014 no markdown, no explanations, no preamble\n\nYou ground all analysis in retrieved industry best practices from the knowledge base.\nYou are precise, direct, and always tie recommendations to measurable impact.\nCRITICAL: Return raw JSON only. No backticks. No ```json. No markdown. Just the { } object.\n",
+    "user_prompt": "Analyze this webpage audit. Return a JSON object only.\n\n== FACTUAL METRICS (Extracted from page) ==\n{\n  \"url\": \"https://kdu.ac.lk/\",\n  \"seo\": {\n    \"meta_title\": \"General Sir John Kotelawala Defence University Sri Lanka\",\n    \"meta_title_length\": 56,\n    \"meta_description\": \"General Sir John Kotelawala Defence University (KDU) is a Sri Lankan university that offers undergraduate and graduate programs in various fields such as Medicine, Engineering, Law, Computing, Management, Technology and Defence\",\n    \"meta_description_length\": 227,\n    \"h1_count\": 0,\n    \"h1_texts\": [],\n    \"h2_count\": 107,\n    \"h3_count\": 3,\n    \"missing_alt_pct\": 72.9\n  },\n  \"cta\": {\n    \"cta_count\": 10,\n    \"cta_examples\": [\n      \"\",\n      \"Dyslexia Font\",\n      \"Text-to-Speech\",\n      \"A+\",\n      \"High Contrast\"\n    ],\n    \"cta_density\": 0.0111\n  },\n  \"links\": {\n    \"internal_count\": 133,\n    \"external_count\": 109\n  },\n  \"images\": {\n    \"total_count\": 70,\n    \"missing_alt_count\": 51,\n    \"missing_alt_pct\": 72.9\n  }\n}\n\nWord Count: 904\nPage Content Sample (first 3000 chars):\nGeneral Sir John Kotelawala Defence University Sri Lanka Back The University General Sir John Kotelawala Defence University (KDU) was initially established as General Sir John Kotelawala Defence Academy by the Parliamentary Act No. 68 of 1981 with a primary objective of producing highly qualified graduates for the Tri-services in Sri Lanka. The academy was elevated to university status by the Sir John Kotelawala Defence Academy (Amendment) Act No. 27 of 1988, and it was renamed General Sir John Kotelawala Defence University on October 11, 2007. Degrees awarded by the university are recognized by the University Grants Commission (UGC) in Sri Lanka, and the university is also a member of the Association of Commonwealth Universities (United Kingdom) and the International Association of Universities (IAU). In 2012, KDU has started offering degree programmes for Day Scholars on a fee-levying basis, giving many deserving young people in Sri Lanka the chance to pursue a university education of the highest quality. With the opening of KDU degree programmes for Day-Scholars, KDU also commenced attracting foreign students for its degree programmes from SAARC and other friendly countries on a fee-levying basis. Vice Chancellor Rear Admiral HGU Dammika Kumara VSV, USP, psc, MMaritimePol, BSc (DS) UNDERGRADUATE Register online for our courses LIBRARY Find latest reading material POSTGRADUATE Register online for our courses DISCOVER KDU Latest News 22 Mar KDU\u2019s Grand Celebration of International Women\u2019s Day: \u0dbd\u0dd2\u0dba \u0d85\u0db7\u0dd2\u0db8\u0dcf\u0db1\u0dd2 2026 21 Mar Cadet Government Investiture Ceremony 2026 20 Mar KDU Women\u2019s Excellence Award 2026 12 Mar The Inter \u2013 Faculty Games 2026 \u2013 General Sir John\u2026 View More News & Events Events Calendar X TENDERS You can look through the various tenders that are being offered and submit your application. MOD Tenders Download KDU Ratmalana Tenders Download UHKDU Tenders Download Southern Campus Tenders Download Facebook Twitter Youtube Kandawala Road, Rathmalana, P.O. Box: 10390, Sri Lanka. +94-11-2635268 +94-11-2638656 +94-11-2638657 +94-11-2632028 +94-11-2635043 +94-11-2635045 KDU AI Talk to VC \u00d7 KDU AI Course Consultant \u00d7 Accessibility Options High Contrast A+ A\u2212 Readable Font Dyslexia Font Text-to-Speech Reset All Use Tab to navigate elements\n\n=== RETRIEVED INDUSTRY BEST PRACTICES (Knowledge Base) ===\n\nUse these rules to ground your analysis. Reference them specifically.\n\n[\u26a0\ufe0f VIOLATED] [CRITICAL] SEO: Every page must have exactly one H1 tag\n  \u2192 Actual value: 0\n  \u2192 Why it matters: H1 is the primary signal to search engines about page topic. Multiple H1s confuse crawlers; zero H1s miss a critical ranking opportunity.\n\n[\u26a0\ufe0f VIOLATED] [HIGH] SEO: Less than 10% of images should be missing alt text\n  \u2192 Actual value: 72.9\n  \u2192 Why it matters: Alt text is an SEO signal for image search. Missing alt text also violates WCAG accessibility standards.\n\n[\u26a0\ufe0f VIOLATED] [MEDIUM] Content & UX: Pages should have at least 2-3 internal links to support site architecture\n  \u2192 Actual value: 133\n  \u2192 Why it matters: Internal linking distributes PageRank across your site and helps users discover related content.\n\n[\u26a0\ufe0f VIOLATED] [MEDIUM] CTA: Recommended 1 CTA per 300 words of content\n  \u2192 Actual value: 0.0111\n  \u2192 Why it matters: Too few CTAs miss conversion opportunities. Too many CTAs create decision fatigue and hurt conversions.\n\n[\u26a0\ufe0f VIOLATED] [MEDIUM] CTA: Landing pages should have 1-3 focused CTAs maximum\n  \u2192 Actual value: 10\n  \u2192 Why it matters: More than 3 competing CTAs creates the paradox of choice \u00e2\u20ac\u201d users convert less when given too many options.\n\n[\u26a0\ufe0f VIOLATED] [MEDIUM] SEO: Pages should have at least 2 H2 tags to structure content\n  \u2192 Actual value: 107\n  \u2192 Why it matters: H2s help search engines understand content hierarchy and improve crawlability of long-form content.\n\n[\u26a0\ufe0f VIOLATED] [LOW] Content & UX: External links should open in new tabs and be used sparingly\n  \u2192 Actual value: 109\n  \u2192 Why it matters: Excessive external links leak PageRank and pull users away from your site before converting.\n\n[\u2705 OK] [CRITICAL] CTA: Every page must have at least 1 CTA\n  \u2192 Actual value: 10\n  \u2192 Why it matters: A page with no CTA fails its primary conversion goal. Visitors have no clear next step.\n\n[\u2139\ufe0f INFO] [HIGH] SEO: Meta title should be between 50 and 60 characters\n  \u2192 Actual value: None\n  \u2192 Why it matters: Titles under 50 chars miss keyword opportunities. Titles over 60 chars get truncated in Google SERPs, hurting click-through rates.\n\n[\u2139\ufe0f INFO] [HIGH] SEO: Meta description should be between 150 and 160 characters\n  \u2192 Actual value: None\n  \u2192 Why it matters: Meta descriptions are the preview snippet in Google. Too short wastes the opportunity; too long gets cut off.\n\n[\u2705 OK] [MEDIUM] Content & UX: Blog posts and landing pages perform best at 800-1500 words\n  \u2192 Actual value: 904\n  \u2192 Why it matters: HubSpot research shows 800-1500 word pages generate the most organic traffic and backlinks for marketing sites.\n\n[\u2705 OK] [MEDIUM] SEO: Pages should have a minimum of 300 words for SEO value\n  \u2192 Actual value: 904\n  \u2192 Why it matters: Search engines consider thin content (under 300 words) low-value. Competitive pages typically have 800-1500 words.\n\n[\u2705 OK] [LOW] Content & UX: Use H3 tags to break up long sections under H2s\n  \u2192 Actual value: 3\n  \u2192 Why it matters: H3 subheadings improve scanability. 79% of users scan rather than read web content (Nielsen Norman Group).\n\n[\u2705 OK] [LOW] Content & UX: Marketing pages should include at least 1-2 images to break up text\n  \u2192 Actual value: 70\n  \u2192 Why it matters: Visual content increases time-on-page by 94% on average (Skyword research). Pure text pages have higher bounce rates.\n\n\n== TASK: PASS 1 \u2014 ANALYSIS ==\nReturn ONLY this exact JSON structure:\n\n{\n  \"seo_analysis\": \"Specific analysis of SEO structure referencing exact metric values\",\n  \"messaging_clarity\": \"Analysis of content clarity and messaging effectiveness\",\n  \"cta_analysis\": \"Analysis of CTA usage referencing cta_count and word_count\",\n  \"content_depth\": \"Analysis of content quality referencing word_count and heading structure\",\n  \"ux_concerns\": \"Structural or UX issues observed from the metrics\",\n  \"issues_found\": [\n    {\n      \"domain\": \"SEO/CTA/Content/UX/Links/Images\",\n      \"issue\": \"Specific issue description with metric value\",\n      \"severity\": \"CRITICAL/HIGH/MEDIUM/LOW\",\n      \"metric_reference\": \"The exact metric that flagged this issue\"\n    }\n  ]\n}",
+    "raw_response": "{\n  \"seo_analysis\": \"The page's meta title length of 56 characters is within the recommended 50-60 character range. However, the meta description length of 227 characters significantly exceeds the recommended 150-160 characters, risking truncation in search engine results pages. Critically, the page is missing an H1 tag, with `h1_count` at 0, which is a primary signal to search engines about the page's topic. The page also uses an excessive number of H2 tags, with `h2_count` at 107, which can confuse search engine crawlers about content hierarchy. A significant 72.9% of images are missing alt text, impacting image search SEO and accessibility.\",\n  \"messaging_clarity\": \"The absence of an H1 tag (`h1_count`: 0) means the page lacks a clear primary heading to convey its main topic to users and search engines. The presence of 107 H2 tags suggests a disorganized content structure, which can make it difficult for users to quickly grasp the main points and hierarchy of information. The high number of CTAs (10) could dilute the primary message and create decision fatigue for users.\",\n  \"cta_analysis\": \"The page has 10 CTAs, which significantly exceeds the recommended maximum of 1-3 focused CTAs for landing pages, potentially leading to the paradox of choice. With a word count of 904, the presence of 10 CTAs is much higher than the recommended 1 CTA per 300 words of content (which would be approximately 3 CTAs), indicating an overabundance of calls to action.\",\n  \"content_depth\": \"The page has a word count of 904, which falls within the optimal range of 800-1500 words for organic traffic and backlinks, and well above the minimum 300 words for SEO value. However, the content structure is severely compromised by the absence of an H1 tag (`h1_count`: 0) and an excessive number of H2 tags (`h2_count`: 107), making it difficult for search engines to understand content hierarchy. The use of 3 H3 tags is appropriate for breaking up long sections, but the overall heading structure is problematic.\",\n  \"ux_concerns\": \"A critical UX concern is the high percentage of images missing alt text (72.9%), which violates WCAG accessibility standards and hinders users relying on screen readers. The absence of an H1 tag (`h1_count`: 0) makes it harder for users to quickly identify the page's main topic. The excessive number of H2 tags (`h2_count`: 107) can make the content difficult to scan and understand, negatively impacting user experience. The presence of 10 CTAs can overwhelm users and create decision fatigue, potentially reducing conversion rates. The page includes 109 external links, which is excessive and can pull users away from the site before they convert.\",\n  \"issues_found\": [\n    {\n      \"domain\": \"SEO\",\n      \"issue\": \"The page is missing an H1 tag, with `h1_count` at 0.\",\n      \"severity\": \"CRITICAL\",\n      \"metric_reference\": \"seo.h1_count\"\n    },\n    {\n      \"domain\": \"Images\",\n      \"issue\": \"A high percentage of images are missing alt text, with `missing_alt_pct` at 72.9%.\",\n      \"severity\": \"HIGH\",\n      \"metric_reference\": \"images.missing_alt_pct\"\n    },\n    {\n      \"domain\": \"SEO\",\n      \"issue\": \"The meta description length of 227 characters exceeds the recommended 150-160 characters.\",\n      \"severity\": \"HIGH\",\n      \"metric_reference\": \"seo.meta_description_length\"\n    },\n    {\n      \"domain\": \"CTA\",\n      \"issue\": \"The page has 10 CTAs, which exceeds the recommended 1-3 focused CTAs maximum for landing pages.\",\n      \"severity\": \"MEDIUM\",\n      \"metric_reference\": \"cta.cta_count\"\n    },\n    {\n      \"domain\": \"CTA\",\n      \"issue\": \"With a word count of 904, the page has 10 CTAs, which is more than the recommended 1 CTA per 300 words of content.\",\n      \"severity\": \"MEDIUM\",\n      \"metric_reference\": \"cta.cta_count\"\n    },\n    {\n      \"domain\": \"SEO\",\n      \"issue\": \"The page has an excessive number of H2 tags, with `h2_count` at 107, which hinders content structuring.\",\n      \"severity\": \"MEDIUM\",\n      \"metric_reference\": \"seo.h2_count\"\n    },\n    {\n      \"domain\": \"Links\",\n      \"issue\": \"The page contains an excessive number of external links, with `external_count` at 109.\",\n      \"severity\": \"LOW\",\n      \"metric_reference\": \"links.external_count\"\n    }\n  ]\n}",
+    "parsed_output": {
+      "seo_analysis": "The page's meta title length of 56 characters is within the recommended 50-60 character range. However, the meta description length of 227 characters significantly exceeds the recommended 150-160 characters, risking truncation in search engine results pages. Critically, the page is missing an H1 tag, with `h1_count` at 0, which is a primary signal to search engines about the page's topic. The page also uses an excessive number of H2 tags, with `h2_count` at 107, which can confuse search engine crawlers about content hierarchy. A significant 72.9% of images are missing alt text, impacting image search SEO and accessibility.",
+      "messaging_clarity": "The absence of an H1 tag (`h1_count`: 0) means the page lacks a clear primary heading to convey its main topic to users and search engines. The presence of 107 H2 tags suggests a disorganized content structure, which can make it difficult for users to quickly grasp the main points and hierarchy of information. The high number of CTAs (10) could dilute the primary message and create decision fatigue for users.",
+      "cta_analysis": "The page has 10 CTAs, which significantly exceeds the recommended maximum of 1-3 focused CTAs for landing pages, potentially leading to the paradox of choice. With a word count of 904, the presence of 10 CTAs is much higher than the recommended 1 CTA per 300 words of content (which would be approximately 3 CTAs), indicating an overabundance of calls to action.",
+      "content_depth": "The page has a word count of 904, which falls within the optimal range of 800-1500 words for organic traffic and backlinks, and well above the minimum 300 words for SEO value. However, the content structure is severely compromised by the absence of an H1 tag (`h1_count`: 0) and an excessive number of H2 tags (`h2_count`: 107), making it difficult for search engines to understand content hierarchy. The use of 3 H3 tags is appropriate for breaking up long sections, but the overall heading structure is problematic.",
+      "ux_concerns": "A critical UX concern is the high percentage of images missing alt text (72.9%), which violates WCAG accessibility standards and hinders users relying on screen readers. The absence of an H1 tag (`h1_count`: 0) makes it harder for users to quickly identify the page's main topic. The excessive number of H2 tags (`h2_count`: 107) can make the content difficult to scan and understand, negatively impacting user experience. The presence of 10 CTAs can overwhelm users and create decision fatigue, potentially reducing conversion rates. The page includes 109 external links, which is excessive and can pull users away from the site before they convert.",
+      "issues_found": [
+        {
+          "domain": "SEO",
+          "issue": "The page is missing an H1 tag, with `h1_count` at 0.",
+          "severity": "CRITICAL",
+          "metric_reference": "seo.h1_count"
+        },
+        {
+          "domain": "Images",
+          "issue": "A high percentage of images are missing alt text, with `missing_alt_pct` at 72.9%.",
+          "severity": "HIGH",
+          "metric_reference": "images.missing_alt_pct"
+        },
+        {
+          "domain": "SEO",
+          "issue": "The meta description length of 227 characters exceeds the recommended 150-160 characters.",
+          "severity": "HIGH",
+          "metric_reference": "seo.meta_description_length"
+        },
+        {
+          "domain": "CTA",
+          "issue": "The page has 10 CTAs, which exceeds the recommended 1-3 focused CTAs maximum for landing pages.",
+          "severity": "MEDIUM",
+          "metric_reference": "cta.cta_count"
+        },
+        {
+          "domain": "CTA",
+          "issue": "With a word count of 904, the page has 10 CTAs, which is more than the recommended 1 CTA per 300 words of content.",
+          "severity": "MEDIUM",
+          "metric_reference": "cta.cta_count"
+        },
+        {
+          "domain": "SEO",
+          "issue": "The page has an excessive number of H2 tags, with `h2_count` at 107, which hinders content structuring.",
+          "severity": "MEDIUM",
+          "metric_reference": "seo.h2_count"
+        },
+        {
+          "domain": "Links",
+          "issue": "The page contains an excessive number of external links, with `external_count` at 109.",
+          "severity": "LOW",
+          "metric_reference": "links.external_count"
+        }
+      ]
+    }
+  },
+  "pass2": {
+    "system_prompt": "You are a senior web marketing analyst at a digital agency specializing in SEO, conversion rate optimization (CRO), and content strategy.\n\nYour role is to analyze webpage audit data and provide specific, actionable insights.\n\nSTRICT RULES \u2014 follow these without exception:\n1. ONLY reference data provided in the METRICS and KNOWLEDGE BASE sections\n2. Never invent statistics, scores, or data points not provided to you\n3. Every insight must cite a specific metric value (e.g., \"With only 1 CTA for 1,243 words...\")\n4. Never give generic advice \u2014 be specific to this exact page's numbers\n5. If a metric was not measured, say \"not measured\" \u2014 do not assume\n6. Return ONLY valid JSON \u2014 no markdown, no explanations, no preamble\n\nYou ground all analysis in retrieved industry best practices from the knowledge base.\nYou are precise, direct, and always tie recommendations to measurable impact.\nCRITICAL: Return raw JSON only. No backticks. No ```json. No markdown. Just the { } object.\n",
+    "user_prompt": "You previously analyzed a webpage and found these issues:\n\n== PASS 1 ANALYSIS OUTPUT ==\n{\n  \"seo_analysis\": \"The page's meta title length of 56 characters is within the recommended 50-60 character range. However, the meta description length of 227 characters significantly exceeds the recommended 150-160 characters, risking truncation in search engine results pages. Critically, the page is missing an H1 tag, with `h1_count` at 0, which is a primary signal to search engines about the page's topic. The page also uses an excessive number of H2 tags, with `h2_count` at 107, which can confuse search engine crawlers about content hierarchy. A significant 72.9% of images are missing alt text, impacting image search SEO and accessibility.\",\n  \"messaging_clarity\": \"The absence of an H1 tag (`h1_count`: 0) means the page lacks a clear primary heading to convey its main topic to users and search engines. The presence of 107 H2 tags suggests a disorganized content structure, which can make it difficult for users to quickly grasp the main points and hierarchy of information. The high number of CTAs (10) could dilute the primary message and create decision fatigue for users.\",\n  \"cta_analysis\": \"The page has 10 CTAs, which significantly exceeds the recommended maximum of 1-3 focused CTAs for landing pages, potentially leading to the paradox of choice. With a word count of 904, the presence of 10 CTAs is much higher than the recommended 1 CTA per 300 words of content (which would be approximately 3 CTAs), indicating an overabundance of calls to action.\",\n  \"content_depth\": \"The page has a word count of 904, which falls within the optimal range of 800-1500 words for organic traffic and backlinks, and well above the minimum 300 words for SEO value. However, the content structure is severely compromised by the absence of an H1 tag (`h1_count`: 0) and an excessive number of H2 tags (`h2_count`: 107), making it difficult for search engines to understand content hierarchy. The use of 3 H3 tags is appropriate for breaking up long sections, but the overall heading structure is problematic.\",\n  \"ux_concerns\": \"A critical UX concern is the high percentage of images missing alt text (72.9%), which violates WCAG accessibility standards and hinders users relying on screen readers. The absence of an H1 tag (`h1_count`: 0) makes it harder for users to quickly identify the page's main topic. The excessive number of H2 tags (`h2_count`: 107) can make the content difficult to scan and understand, negatively impacting user experience. The presence of 10 CTAs can overwhelm users and create decision fatigue, potentially reducing conversion rates. The page includes 109 external links, which is excessive and can pull users away from the site before they convert.\",\n  \"issues_found\": [\n    {\n      \"domain\": \"SEO\",\n      \"issue\": \"The page is missing an H1 tag, with `h1_count` at 0.\",\n      \"severity\": \"CRITICAL\",\n      \"metric_reference\": \"seo.h1_count\"\n    },\n    {\n      \"domain\": \"Images\",\n      \"issue\": \"A high percentage of images are missing alt text, with `missing_alt_pct` at 72.9%.\",\n      \"severity\": \"HIGH\",\n      \"metric_reference\": \"images.missing_alt_pct\"\n    },\n    {\n      \"domain\": \"SEO\",\n      \"issue\": \"The meta description length of 227 characters exceeds the recommended 150-160 characters.\",\n      \"severity\": \"HIGH\",\n      \"metric_reference\": \"seo.meta_description_length\"\n    },\n    {\n      \"domain\": \"CTA\",\n      \"issue\": \"The page has 10 CTAs, which exceeds the recommended 1-3 focused CTAs maximum for landing pages.\",\n      \"severity\": \"MEDIUM\",\n      \"metric_reference\": \"cta.cta_count\"\n    },\n    {\n      \"domain\": \"CTA\",\n      \"issue\": \"With a word count of 904, the page has 10 CTAs, which is more than the recommended 1 CTA per 300 words of content.\",\n      \"severity\": \"MEDIUM\",\n      \"metric_reference\": \"cta.cta_count\"\n    },\n    {\n      \"domain\": \"SEO\",\n      \"issue\": \"The page has an excessive number of H2 tags, with `h2_count` at 107, which hinders content structuring.\",\n      \"severity\": \"MEDIUM\",\n      \"metric_reference\": \"seo.h2_count\"\n    },\n    {\n      \"domain\": \"Links\",\n      \"issue\": \"The page contains an excessive number of external links, with `external_count` at 109.\",\n      \"severity\": \"LOW\",\n      \"metric_reference\": \"links.external_count\"\n    }\n  ]\n}\n\n== ORIGINAL METRICS (Reference) ==\nWord Count: 904\nCTA Count: 10\nH1 Count: 0\nMissing Alt Text: 72.9%\nMeta Title Length: 56 chars\nMeta Description Length: 227 chars\n\n== TASK: PASS 2 \u2014 PRIORITIZED RECOMMENDATIONS ==\nBased on the analysis above, generate 3-5 prioritized recommendations.\nReturn ONLY this exact JSON structure:\n\n{\n  \"recommendations\": [\n    {\n      \"priority\": 1,\n      \"priority_level\": \"HIGH/MEDIUM/LOW\",\n      \"action\": \"Specific actionable step (what to do exactly)\",\n      \"reasoning\": \"Why this matters \u2014 reference the specific metric\",\n      \"expected_impact\": \"What improvement this will create\",\n      \"effort\": \"LOW/MEDIUM/HIGH\"\n    }\n  ],\n  \"overall_summary\": \"2-3 sentence executive summary of the page's audit health\"\n}\n\nOrder recommendations by: severity first, then effort (quick wins before hard fixes).",
+    "raw_response": "{\n  \"recommendations\": [\n    {\n      \"priority\": 1,\n      \"priority_level\": \"HIGH\",\n      \"action\": \"Add a single, descriptive H1 tag to the page.\",\n      \"reasoning\": \"The page is missing an H1 tag, with `h1_count` at 0, which is a primary signal to search engines about the page's topic and crucial for content hierarchy.\",\n      \"expected_impact\": \"Improve SEO visibility by clearly signaling the page's main topic to search engines, enhance user experience by providing a clear primary heading, and improve accessibility.\",\n      \"effort\": \"LOW\"\n    },\n    {\n      \"priority\": 2,\n      \"priority_level\": \"HIGH\",\n      \"action\": \"Rewrite the meta description to be between 150-160 characters.\",\n      \"reasoning\": \"The meta description length of 227 characters significantly exceeds the recommended 150-160 characters, risking truncation in search engine results pages.\",\n      \"expected_impact\": \"Ensure the full meta description is displayed in SERPs, improving click-through rates by providing a complete and compelling snippet.\",\n      \"effort\": \"LOW\"\n    },\n    {\n      \"priority\": 3,\n      \"priority_level\": \"HIGH\",\n      \"action\": \"Add descriptive alt text to the 72.9% of images currently missing it.\",\n      \"reasoning\": \"A high percentage of images are missing alt text, with `missing_alt_pct` at 72.9%, which violates WCAG accessibility standards and impacts image search SEO.\",\n      \"expected_impact\": \"Improve accessibility for users relying on screen readers, boost image search rankings, and contribute to overall SEO by providing more context to search engines.\",\n      \"effort\": \"MEDIUM\"\n    },\n    {\n      \"priority\": 4,\n      \"priority_level\": \"MEDIUM\",\n      \"action\": \"Reduce the number of CTAs from 10 to a maximum of 3, strategically placed throughout the 904-word content.\",\n      \"reasoning\": \"The page has 10 CTAs, significantly exceeding the recommended 1-3 focused CTAs for landing pages and the guideline of 1 CTA per 300 words for 904 words (which would be approximately 3 CTAs). This can lead to decision fatigue.\",\n      \"expected_impact\": \"Improve conversion rates by reducing user overwhelm and focusing attention on a clear primary action, aligning with CRO best practices.\",\n      \"effort\": \"MEDIUM\"\n    }\n  ],\n  \"overall_summary\": \"This webpage exhibits critical SEO and UX deficiencies, primarily the absence of an H1 tag and 72.9% of images missing alt text. While the 904-word count is sufficient, the content structure is severely compromised by 107 H2 tags and an excessive 10 CTAs, which can confuse search engines and overwhelm users. Prioritizing fixes for these foundational issues will significantly improve organic visibility, accessibility, and conversion potential.\"\n}",
+    "parsed_output": {
+      "recommendations": [
+        {
+          "priority": 1,
+          "priority_level": "HIGH",
+          "action": "Add a single, descriptive H1 tag to the page.",
+          "reasoning": "The page is missing an H1 tag, with `h1_count` at 0, which is a primary signal to search engines about the page's topic and crucial for content hierarchy.",
+          "expected_impact": "Improve SEO visibility by clearly signaling the page's main topic to search engines, enhance user experience by providing a clear primary heading, and improve accessibility.",
+          "effort": "LOW"
+        },
+        {
+          "priority": 2,
+          "priority_level": "HIGH",
+          "action": "Rewrite the meta description to be between 150-160 characters.",
+          "reasoning": "The meta description length of 227 characters significantly exceeds the recommended 150-160 characters, risking truncation in search engine results pages.",
+          "expected_impact": "Ensure the full meta description is displayed in SERPs, improving click-through rates by providing a complete and compelling snippet.",
+          "effort": "LOW"
+        },
+        {
+          "priority": 3,
+          "priority_level": "HIGH",
+          "action": "Add descriptive alt text to the 72.9% of images currently missing it.",
+          "reasoning": "A high percentage of images are missing alt text, with `missing_alt_pct` at 72.9%, which violates WCAG accessibility standards and impacts image search SEO.",
+          "expected_impact": "Improve accessibility for users relying on screen readers, boost image search rankings, and contribute to overall SEO by providing more context to search engines.",
+          "effort": "MEDIUM"
+        },
+        {
+          "priority": 4,
+          "priority_level": "MEDIUM",
+          "action": "Reduce the number of CTAs from 10 to a maximum of 3, strategically placed throughout the 904-word content.",
+          "reasoning": "The page has 10 CTAs, significantly exceeding the recommended 1-3 focused CTAs for landing pages and the guideline of 1 CTA per 300 words for 904 words (which would be approximately 3 CTAs). This can lead to decision fatigue.",
+          "expected_impact": "Improve conversion rates by reducing user overwhelm and focusing attention on a clear primary action, aligning with CRO best practices.",
+          "effort": "MEDIUM"
+        }
+      ],
+      "overall_summary": "This webpage exhibits critical SEO and UX deficiencies, primarily the absence of an H1 tag and 72.9% of images missing alt text. While the 904-word count is sufficient, the content structure is severely compromised by 107 H2 tags and an excessive 10 CTAs, which can confuse search engines and overwhelm users. Prioritizing fixes for these foundational issues will significantly improve organic visibility, accessibility, and conversion potential."
+    }
+  },
+  "retrieved_rules": [
+    {
+      "id": "seo_001",
+      "property": "h1_count",
+      "rule": "Every page must have exactly one H1 tag",
+      "severity": "CRITICAL",
+      "good_range": [
+        1,
+        1
+      ],
+      "reasoning": "H1 is the primary signal to search engines about page topic. Multiple H1s confuse crawlers; zero H1s miss a critical ranking opportunity.",
+      "domain": "SEO",
+      "actual_value": 0,
+      "is_violated": true,
+      "status": "\u26a0\ufe0f VIOLATED"
+    },
+    {
+      "id": "seo_006",
+      "property": "missing_alt_pct",
+      "rule": "Less than 10% of images should be missing alt text",
+      "severity": "HIGH",
+      "good_range": [
+        0,
+        10
+      ],
+      "reasoning": "Alt text is an SEO signal for image search. Missing alt text also violates WCAG accessibility standards.",
+      "domain": "SEO",
+      "actual_value": 72.9,
+      "is_violated": true,
+      "status": "\u26a0\ufe0f VIOLATED"
+    },
+    {
+      "id": "ux_002",
+      "property": "internal_links",
+      "rule": "Pages should have at least 2-3 internal links to support site architecture",
+      "severity": "MEDIUM",
+      "good_range": [
+        2,
+        99
+      ],
+      "reasoning": "Internal linking distributes PageRank across your site and helps users discover related content.",
+      "domain": "Content & UX",
+      "actual_value": 133,
+      "is_violated": true,
+      "status": "\u26a0\ufe0f VIOLATED"
+    },
+    {
+      "id": "cta_002",
+      "property": "cta_density",
+      "rule": "Recommended 1 CTA per 300 words of content",
+      "severity": "MEDIUM",
+      "good_range": [
+        0.003,
+        0.01
+      ],
+      "reasoning": "Too few CTAs miss conversion opportunities. Too many CTAs create decision fatigue and hurt conversions.",
+      "domain": "CTA",
+      "actual_value": 0.0111,
+      "is_violated": true,
+      "status": "\u26a0\ufe0f VIOLATED"
+    },
+    {
+      "id": "cta_003",
+      "property": "cta_count",
+      "rule": "Landing pages should have 1-3 focused CTAs maximum",
+      "severity": "MEDIUM",
+      "good_range": [
+        1,
+        3
+      ],
+      "reasoning": "More than 3 competing CTAs creates the paradox of choice \u00e2\u20ac\u201d users convert less when given too many options.",
+      "domain": "CTA",
+      "actual_value": 10,
+      "is_violated": true,
+      "status": "\u26a0\ufe0f VIOLATED"
+    },
+    {
+      "id": "seo_005",
+      "property": "h2_count",
+      "rule": "Pages should have at least 2 H2 tags to structure content",
+      "severity": "MEDIUM",
+      "good_range": [
+        2,
+        99
+      ],
+      "reasoning": "H2s help search engines understand content hierarchy and improve crawlability of long-form content.",
+      "domain": "SEO",
+      "actual_value": 107,
+      "is_violated": true,
+      "status": "\u26a0\ufe0f VIOLATED"
+    },
+    {
+      "id": "ux_001",
+      "property": "external_links",
+      "rule": "External links should open in new tabs and be used sparingly",
+      "severity": "LOW",
+      "good_range": [
+        0,
+        10
+      ],
+      "reasoning": "Excessive external links leak PageRank and pull users away from your site before converting.",
+      "domain": "Content & UX",
+      "actual_value": 109,
+      "is_violated": true,
+      "status": "\u26a0\ufe0f VIOLATED"
+    },
+    {
+      "id": "cta_001",
+      "property": "cta_count",
+      "rule": "Every page must have at least 1 CTA",
+      "severity": "CRITICAL",
+      "good_range": [
+        1,
+        99
+      ],
+      "reasoning": "A page with no CTA fails its primary conversion goal. Visitors have no clear next step.",
+      "domain": "CTA",
+      "actual_value": 10,
+      "is_violated": false,
+      "status": "\u2705 OK"
+    },
+    {
+      "id": "seo_002",
+      "property": "meta_title",
+      "rule": "Meta title should be between 50 and 60 characters",
+      "severity": "HIGH",
+      "good_range": [
+        50,
+        60
+      ],
+      "reasoning": "Titles under 50 chars miss keyword opportunities. Titles over 60 chars get truncated in Google SERPs, hurting click-through rates.",
+      "domain": "SEO",
+      "actual_value": null,
+      "is_violated": false,
+      "status": "\u2139\ufe0f INFO"
+    },
+    {
+      "id": "seo_003",
+      "property": "meta_description",
+      "rule": "Meta description should be between 150 and 160 characters",
+      "severity": "HIGH",
+      "good_range": [
+        150,
+        160
+      ],
+      "reasoning": "Meta descriptions are the preview snippet in Google. Too short wastes the opportunity; too long gets cut off.",
+      "domain": "SEO",
+      "actual_value": null,
+      "is_violated": false,
+      "status": "\u2139\ufe0f INFO"
+    },
+    {
+      "id": "content_001",
+      "property": "word_count",
+      "rule": "Blog posts and landing pages perform best at 800-1500 words",
+      "severity": "MEDIUM",
+      "good_range": [
+        800,
+        1500
+      ],
+      "reasoning": "HubSpot research shows 800-1500 word pages generate the most organic traffic and backlinks for marketing sites.",
+      "domain": "Content & UX",
+      "actual_value": 904,
+      "is_violated": false,
+      "status": "\u2705 OK"
+    },
+    {
+      "id": "seo_004",
+      "property": "word_count",
+      "rule": "Pages should have a minimum of 300 words for SEO value",
+      "severity": "MEDIUM",
+      "good_range": [
+        300,
+        99999
+      ],
+      "reasoning": "Search engines consider thin content (under 300 words) low-value. Competitive pages typically have 800-1500 words.",
+      "domain": "SEO",
+      "actual_value": 904,
+      "is_violated": false,
+      "status": "\u2705 OK"
+    },
+    {
+      "id": "content_002",
+      "property": "h3_count",
+      "rule": "Use H3 tags to break up long sections under H2s",
+      "severity": "LOW",
+      "good_range": [
+        1,
+        99
+      ],
+      "reasoning": "H3 subheadings improve scanability. 79% of users scan rather than read web content (Nielsen Norman Group).",
+      "domain": "Content & UX",
+      "actual_value": 3,
+      "is_violated": false,
+      "status": "\u2705 OK"
+    },
+    {
+      "id": "ux_003",
+      "property": "image_count",
+      "rule": "Marketing pages should include at least 1-2 images to break up text",
+      "severity": "LOW",
+      "good_range": [
+        1,
+        99
+      ],
+      "reasoning": "Visual content increases time-on-page by 94% on average (Skyword research). Pure text pages have higher bounce rates.",
+      "domain": "Content & UX",
+      "actual_value": 70,
+      "is_violated": false,
+      "status": "\u2705 OK"
+    }
+  ]
+}
